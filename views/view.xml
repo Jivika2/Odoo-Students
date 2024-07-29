@@ -53,10 +53,7 @@
                         <field name="school_id"
                                attrs="{'invisible':[('name','=',False)]}"/>
                     </group>
-                    <group>
-                        <field name="stud_tag_list"
-                               widget="many2many_tags"/>
-                    </group>
+                    
                 </group>
             </form>
         </field>
@@ -102,8 +99,7 @@
     </record>
 
     <menuitem id="student_root"
-              name="Student"
-              web_icon="student,static/description/menu_icon.png">
+              name="Student">
         <menuitem id="student_subroot" name="Profile">
             <menuitem id="student_sub"
                       name="Student"
